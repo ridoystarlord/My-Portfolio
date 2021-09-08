@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --background-color:#333647;
+    --secondary-color:#bbbbbb;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--background-color) !important;
+}
+h1,h2,h3,h4,h5,h6,p,span,a,td{
+    cursor: pointer;
+}
+/* Navbar Style */
+
+.navbar_section .navbar-brand{
+    font-size: 22px;
+}
+.navbar_section .navbar-nav li{
+    margin: 0px 8px;
+}
+.navbar_section .navbar-nav li a{
+    color: white !important;
+    font-size: 15px;
+}
+.navbar_section .navbar-nav .nav-link::before{
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+}
+.navbar_section .navbar-nav .nav-link:hover::before{
+    width: 17px;
+    height: 2px;
+    content: '';
+    position: absolute;
+    bottom: 7px;
+    background-color: white;
+}
+
+/* hero section */
+.hero_section h1,h2,h3,p{
+    color: white;
+}
+.hero_section h3{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.hero_section h1{
+    font-size: 65px;
+    font-weight: 800;
+
+}
+.hero_section h2{
+    font-size: 20px;
+    font-weight: 100;
+    margin: 8px 0px;
+
+}
+.hero_section p{
+    font-size: 13px;
+    margin-top: 13px;
+    line-height: 21px;
+    color: var(--secondary-color);
+}
+.hero_section button{
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    background-color: #F87652;
+    border: 3px solid #F87652;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+.hero_section button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+.particles-js-canvas-el{
+    position: absolute;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1000;
+    margin: 0px;
+}
+
+/* about section */
+.about_section{
+    background-color: #282A39;
+}
+.about_section #heading{
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+}
+.about_section .lets_talk{
+color: white;
+font-weight: 400;
+margin-top: 14px;
+}
+
+.about_section  #info_gmail{
+    font-weight: 600;
+    font-size: 15px;
+    color: #F87652;
+    margin-top: 35px;
+    word-spacing: 6px;
+}
+.about_section .contact-info{
+    margin-top: 15px;
+}
+.about_section .contact-info h5{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    word-spacing: 6px;
+}
+.about_section #text{
+    font-size: 15px;
+    margin-top: 13px;
+    line-height: 25px;
+    color: var(--secondary-color);
+}
+.about_section hr{
+    width: 6rem;
+    margin: 0px;
+    border:1px solid #F87652;
+}
+.about_section table td{
+    border: none;
+    color: white;
+    font-size: 13px;
+}
+.about_section button{
+    border-radius: 7px;
+    font-size: 15px;
+    color: white;
+    background-color: #F87652;
+    border-color: 3px solid #F87652;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    
+}
+.about_section button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+/* skills section */
+.skills_section .skill-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills_section #heading{
+    font-weight: 600;
+    font-size: 50px;
+}
+.skills_section hr{
+    width: 6rem;
+    border:1px solid #F87652;
+}
+
+.skills_section p{
+    color: var(--secondary-color);
+    font-size: 13px;
+}
+
+.skills_section .social_media_icons .list-group-item{
+    border: none;
+    border-left: 2px solid #F87652;
+    border-radius: 0px;
+    margin: 5px 0px;
+    width: 200px;
+    background-color: #81818180;
+
+}
+.skills_section .social_media_icons .list-group-item a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.skills_section .social_media_icons .list-group-item:hover a{
+    margin-left: 10px;
+}
+.skills_section .skill-right .each-skills{
+    margin: 25px 0px;
+}
+.skills_section .skill-right .each-skills span{
+    color: white ;
+    font-size: 14px;
+}
+.skills_section .skill-right .each-skills .progress{
+    background: #81818180;
+    border-radius: 100px;
+    margin-top: 3px;
+    height: 10px;
+}
+.skills_section .skill-right .each-skills .progress-bar{
+    background: #F87652;
+    color: transparent;
+}
+
+/* portfolio section  */
+.portfolio_section{
+    background-color: #282A39;
+}
+.portfolio_section .nav-item{
+    border: none;
+    text-align: center;
+}
+.portfolio_section .nav-item .nav-link.active{
+    border: none;
+    color: white;
+    border-bottom: 2px solid #F87652;
+    background: transparent;
+}
+
+/* Blogs section  */
+.blogs_section .card{
+    background-color: #232432;
+}
+
+.blogs_section .card:hover{
+    animation: pulse;
+    animation-duration: 0.5s;
+}
+.blogs_section .card .card-title{
+    font-weight: 500;
+    font-size: 22px;
+}
+.blogs_section .card .card-text{
+    font-size: 13px;
+    color: var(--secondary-color);
+}
+/* contact section */
+.contact_section{
+    background-color: #282A39;
+}
+.contact_section h3{
+    font-weight: 600;
+    font-size: 50px;
+}
+.contact_section hr{
+    width: 6rem;
+    border:1px solid #F87652;
+    margin: 12px 0px; 
+}
+.contact_section p{
+    color: var(--secondary-color);
+    
+}
+.contact_section .form-control{
+    background: var(--background-color);
+    border: 2px solid #81818180;
+    border-radius: 0px;
+    color: white;
+}
+.contact_section button{
+    background: #F87652;
+    border: 2px solid #F87652;
+    color: white;
+    font-size: 15px;
+    width: 100px;
+}
+.contact_section button:hover{
+    animation: swing;
+    animation-duration: 0.5s;
+}
+.contact_section ul{
+    list-style: none;
+}
+.contact_section ul li{
+    color: white;
+}
+
+.contact_section ul li i{
+    color: #F87652;
+}
+/* footer section  */
+.footer_section{
+    border: 2px solid #81818180;
+}
+.footer_section .navbar-brand{
+    font-size: 25px;
+}
+.footer_section p{
+    margin-top: 13px;
+    color: var(--secondary-color);
+    font-size: 12px;
+}
+.footer_section .links i{
+    color: #F87652;
+    font-size: 20px ;
+    border: 2px solid #F87652;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    text-align: center;
+    justify-content: center;
+    display: inline-block;
+    margin-right: 5px;
+}
+.footer_section .links i:hover{
+    animation-duration: 0.5s;
+    animation: swing;
+    background: white;
+}
+.footer_section .footer-part h4{
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+}
+.footer_section .footer-part .list-group .list-group-item{
+    color: white;
+    
+}
+.footer_section .footer-part .list-group .list-group-item:hover i{
+    padding-right: 10px;
+}
+.footer_section .footer-part .list-group .list-group-item i{
+    color: #F87652;
+    font-size: 10px;
+    transition: 0.5s;
+}
+
+@media (max-width:1200px) and (min-width:993px) {
+    .hero_section h1{
+        font-size: 58px;
+    }
+}
+@media (max-width:993px) and (min-width:768px) {
+    .hero_section h1{
+        font-size: 42px;
+    }
+    .hero_section h2{
+        font-size: 15px;
+    }
+    .hero_section h3{
+        font-size: 15px;
+    }
+    .hero_section p{
+        font-size: 11px;
+    }
+    .hero_section button{
+        font-size: 15px;
+    }
+    .about_section #text{
+        font-size: 12px;
+    }
+    .about_section #heading{
+        font-size: 28px;
+    }
+    .contact_section h3{
+        font-size: 42px;
+    }
+    .iframe{
+        width: 50%;
+    }
+}
+@media (max-width:768px) and (min-width:500px) {
+    .hero_section{
+        margin: 135px 0px;
+    }
+    .hero_section h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    .hero_section h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero_section h3{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .hero_section p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero_section .btn-container{
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero_section .btn-container button{
+        font-size: 15px;
+        width: 100px;
+    }
+    .hero_section img{
+        margin-top: 50px;
+    }
+    .footer_section .links {
+        margin-bottom: 30px;
+    }
+    .footer_section .footer-part h4 {
+        font-size: 17px;
+    }
+    .footer_section .footer-part .list-group .list-group-item{
+        font-size: 13px;
+    }
+    .footer_section .footer-part .list-group{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:500px) and (min-width:330px) {
+    .hero_section{
+        margin: 25px 0px;
+    }
+    .hero_section h1{
+        font-size: 46px;
+        text-align: center;
+    }
+    .hero_section h2{
+        font-size: 15px;
+        text-align: center;
+    }
+    .hero_section h3{
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+    .hero_section p{
+        font-size: 11px;
+        text-align: center;
+    }
+    .hero_section .btn-container{
+        font-size: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero_section .btn-container button{
+        font-size: 15px;
+        width: 100px;
+    }
+    .hero_section img{
+        margin-top: 50px;
+    }
+    .skills_section .social_media_icons .list-group-item{
+    
+        width: 100%;
+        
+    
+    }
+}
