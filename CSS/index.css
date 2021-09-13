@@ -14,7 +14,7 @@ body{
 h1,h2,h3,h4,h5,h6,p,span,a,td{
     cursor: pointer;
 }
-/* Navbar Style */
+/* Navbar Style start*/
 
 .navbar_section .navbar-brand{
     font-size: 22px;
@@ -44,7 +44,9 @@ h1,h2,h3,h4,h5,h6,p,span,a,td{
     background-color: white;
 }
 
-/* hero section */
+/* Navbar Style END*/
+
+/* hero section start */
 .hero_section h1,h2,h3,p{
     color: white;
 }
@@ -97,7 +99,9 @@ h1,h2,h3,h4,h5,h6,p,span,a,td{
     margin: 0px;
 }
 
-/* about section */
+/* hero section END */
+
+/* About section start */
 .about_section{
     background-color: #282A39;
 }
@@ -107,12 +111,6 @@ h1,h2,h3,h4,h5,h6,p,span,a,td{
     letter-spacing: 0.5px;
     line-height: 57px;
 }
-.about_section .lets_talk{
-color: white;
-font-weight: 400;
-margin-top: 14px;
-}
-
 .about_section  #info_gmail{
     font-weight: 600;
     font-size: 15px;
@@ -129,7 +127,7 @@ margin-top: 14px;
     font-weight: 400;
     word-spacing: 6px;
 }
-.about_section #text{
+.about_section #about-description{
     font-size: 15px;
     margin-top: 13px;
     line-height: 25px;
@@ -162,8 +160,9 @@ margin-top: 14px;
     color: black;
     border-color: white;
 }
+/* About section END */
 
-/* skills section */
+/* skills section start */
 .skills_section .skill-left{
     display: flex;
     flex-direction: column;
@@ -212,14 +211,15 @@ margin-top: 14px;
     background: #81818180;
     border-radius: 100px;
     margin-top: 3px;
-    height: 10px;
+    height: 15px;
+    
 }
 .skills_section .skill-right .each-skills .progress-bar{
     background: #F87652;
-    color: transparent;
+    color: white;
 }
-
-/* portfolio section  */
+/* skills section END */
+/* portfolio section start */
 .portfolio_section{
     background-color: #282A39;
 }
@@ -233,6 +233,8 @@ margin-top: 14px;
     border-bottom: 2px solid #F87652;
     background: transparent;
 }
+
+/* portfolio section END */
 
 /* Blogs section  */
 .blogs_section .card{
